@@ -83,7 +83,7 @@ void Shrink(char str[])
 	if (str[0] >= 'a' && str[0] <= 'z' || str[0] <= 'à' && str[0] <= 'ÿ')str[0] -= 32;
 	for (int i = 1; str[i]; i++)
 	{
-		if (str[--i] == ' ')
+		if (str[i] == ' ')
 		{
 			if (str[i] >= 'a' && str[i] <= 'z') str[i] -= 32;
 			if (str[i] >= 'à' && str[i] <= 'ÿ') str[i] -= 32;
